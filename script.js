@@ -1,3 +1,24 @@
+var body = document.getElementById('gradient');
+// var randomColor = function() {
+//   return '#' + Math.random().toString(16).substring(2, 8);
+// }
+// body.style.background = "linear-gradient(to right, " + randomColor() + ", " + randomColor() + ")"
+
+var color1 = document.querySelector('.color1');
+var color2 = document.querySelector('.color2');
+
+function setGradient() {
+  body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")"
+}
+
+// color1.addEventListener('input', function() {
+//   setGradient();
+// });
+
+// color2.addEventListener('input', function() {
+//   setGradient();
+// });
+
 var addInput = document.getElementById('todo-add-field');
 var addButton = document.getElementById('todo-add-button');
 var ul = document.getElementsByTagName('ul')[0];
